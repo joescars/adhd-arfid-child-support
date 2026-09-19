@@ -1,0 +1,21 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Local research scratch space
+.local/
+notes-private/
+
+# Python/tool caches if tooling is added later
+__pycache__/
+.pytest_cache/
+.venv/
+
+# Secrets and personal data
+.env
+.env.*
+*.pem
+*.key
