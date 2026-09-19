@@ -8,6 +8,7 @@ This project began as a personal need: finding clearer, calmer, and more trustwo
 
 ### Parent routes
 
+- [Find your next step](docs/next-step.md): choose a path by concern, not diagnosis
 - [Start here](docs/01-start-here.md): immediate orientation and appointment preparation
 - [Red flags and urgent help](docs/safety/red-flags-and-urgent-help.md)
 - [Who can help](docs/04-who-can-help.md): professionals, roles, and provider-fit questions
