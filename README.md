@@ -21,7 +21,9 @@ This project began as a personal need: finding clearer, calmer, and more trustwo
 - [ARFID overview](docs/arfid/overview.md)
 - [Helping a child explore new foods](docs/arfid/trying-new-foods.md)
 - [ADHD and ARFID together](docs/cross-cutting/adhd-arfid.md)
+- [Official resources for families](resources/index.md)
 - [Caregiver resources](resources/us.md)
+- [What the research says](docs/research/what-the-research-says.md)
 - [Research-note template](templates/research-note.md)
 - [Contribution and source standards](CONTRIBUTING.md)
 

@@ -41,6 +41,7 @@ function slugForSource(sourcePath: string): string {
   const relativePath = relative(projectRoot, sourcePath).split(sep).join('/');
   const withoutExtension = relativePath.replace(/\.md$/, '');
   if (withoutExtension === 'docs/01-start-here') return 'start-here';
+  if (withoutExtension === 'resources/index') return 'resources';
   if (withoutExtension === 'DISCLAIMER') return 'disclaimer';
   return withoutExtension.replace(/^docs\//, '').replace(/^resources\//, 'resources/');
 }
