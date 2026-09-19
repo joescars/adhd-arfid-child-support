@@ -9,6 +9,7 @@ This project began as a personal need: finding clearer, calmer, and more trustwo
 - [Start here](docs/01-start-here.md): how to use this repository safely
 - [ADHD overview](docs/adhd/overview.md)
 - [ARFID overview](docs/arfid/overview.md)
+- [Helping a child explore new foods](docs/arfid/trying-new-foods.md)
 - [ADHD and ARFID together](docs/cross-cutting/adhd-arfid.md)
 - [Caregiver resources](resources/us.md)
 - [Research-note template](templates/research-note.md)
