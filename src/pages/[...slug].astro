@@ -8,10 +8,19 @@ export function getStaticPaths() {
 }
 
 const { page } = Astro.props;
+const pageImage = page.slug === 'arfid/trying-new-foods'
+  ? { src: '/images/new-foods-still-life.webp', alt: 'Small bowls and plates arranged in a gentle progression of familiar and new foods' }
+  : page.slug === '04-who-can-help'
+    ? { src: '/images/care-pathway.webp', alt: 'A compass, calendar, notebook, and connected cards representing a care pathway' }
+    : undefined;
 ---
 <SiteLayout title={page.title}>
   <article class="content-page">
+    {pageImage && <img class="page-image" src={pageImage.src} alt={pageImage.alt} width="1536" height="1024" />}
     <p class="eyebrow">{page.section}</p>
     <div set:html={page.html} />
   </article>
 </SiteLayout>
+<style>
+  .page-image { border-radius: 1.25rem; display: block; height: 250px; margin-bottom: 2rem; object-fit: cover; width: 100%; }
+</style>

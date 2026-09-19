@@ -7,13 +7,16 @@ const featured = pages.filter((page) => ['Start here', 'Red flags and urgent hel
 ---
 <SiteLayout title="Parent-first resources" description="Evidence-aware ADHD and ARFID resources for parents and caregivers.">
   <section class="hero">
-    <p class="eyebrow">A parent-first resource library</p>
-    <h1>Clearer next steps when you feel stuck.</h1>
-    <p class="lede">Evidence-aware information about ADHD, ARFID, feeding concerns, and practical support for children—organized around what parents need to decide next.</p>
-    <div class="hero-actions">
-      <a class="button primary" href="/start-here/">Start here</a>
-      <a class="button" href="/safety/red-flags-and-urgent-help/">Check urgent signs</a>
+    <div class="hero-copy">
+      <p class="eyebrow">A parent-first resource library</p>
+      <h1>Clearer next steps when you feel stuck.</h1>
+      <p class="lede">Evidence-aware information about ADHD, ARFID, feeding concerns, and practical support for children—organized around what parents need to decide next.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="/start-here/">Start here</a>
+        <a class="button" href="/safety/red-flags-and-urgent-help/">Check urgent signs</a>
+      </div>
     </div>
+    <img class="hero-image" src="/images/hero-resource-library.webp" alt="A calm notebook, cup, plate, and plant arranged on a sunlit desk" width="1536" height="1024" />
   </section>
   <section aria-labelledby="featured-heading">
     <h2 id="featured-heading">Parent routes</h2>
@@ -28,7 +31,9 @@ const featured = pages.filter((page) => ['Start here', 'Red flags and urgent hel
   </section>
 </SiteLayout>
 <style>
-  .hero { background: linear-gradient(135deg, #e8f0fe, #fff); border-radius: 1.5rem; padding: clamp(2rem, 6vw, 5rem); margin-bottom: 3rem; }
+  .hero { background: linear-gradient(135deg, #e8f0fe, #fff); border-radius: 1.5rem; display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, .8fr); gap: 2rem; align-items: center; overflow: hidden; margin-bottom: 3rem; }
+  .hero-copy { padding: clamp(2rem, 6vw, 5rem) 0 clamp(2rem, 6vw, 5rem) clamp(2rem, 6vw, 5rem); }
+  .hero-image { align-self: stretch; height: 100%; min-height: 360px; object-fit: cover; object-position: 64% center; width: 100%; }
   h1 { color: #174ea6; font-size: clamp(2.5rem, 7vw, 5rem); line-height: 1.03; letter-spacing: -.06em; margin: .5rem 0 1.25rem; max-width: 760px; }
   .lede { font-size: 1.2rem; max-width: 680px; color: #3c4043; }
   .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
@@ -42,5 +47,6 @@ const featured = pages.filter((page) => ['Start here', 'Red flags and urgent hel
   .notice { background: #fff; border-left: 5px solid #0b57d0; margin-top: 3rem; padding: 1.25rem 1.5rem; }
   .notice h2 { margin-top: 0; }
   @media (max-width: 900px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 700px) { .hero { grid-template-columns: 1fr; gap: 0; } .hero-copy { padding: 2rem; } .hero-image { min-height: 230px; max-height: 280px; object-position: center 58%; } }
   @media (max-width: 560px) { .card-grid { grid-template-columns: 1fr; } }
 </style>
