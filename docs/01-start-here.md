@@ -2,6 +2,15 @@
 
 ## If you are worried about a child
 
+### Choose a starting path
+
+- **Something feels urgent:** read [red flags and urgent help](safety/red-flags-and-urgent-help.md).
+- **You do not know which professional to call:** read [who can help](04-who-can-help.md).
+- **You have an appointment but feel unprepared:** use [prepare for care](05-prepare-for-care.md).
+- **The problem is mainly school or lunch:** read [school and daily life](06-school-and-daily-life.md).
+- **You want a low-pressure home strategy:** read [helping a child explore new foods](arfid/trying-new-foods.md), while preserving safe foods and stopping if distress or safety concerns increase.
+- **You are trying to find a service:** use [choosing a resource or provider](../resources/resource-selection-guide.md).
+
 Start with the child's pediatrician or primary care clinician. ADHD has no single diagnostic test, and sleep problems, anxiety, depression, learning differences, and other health conditions can look similar.[1][2] An evaluation usually needs information from more than one setting, such as home and school.[1][2]
 
 For eating concerns, describe patterns rather than arguing over a label: foods avoided, safe foods, meal duration, distress, gagging or fear, hydration, constipation, energy, growth concerns, and what happens at school or social events. Ask whether the child needs evaluation by a pediatrician, registered dietitian, feeding specialist, psychologist/psychiatrist, or an eating-disorder service.

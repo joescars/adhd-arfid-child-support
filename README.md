@@ -6,7 +6,17 @@ This project began as a personal need: finding clearer, calmer, and more trustwo
 
 ## What is here
 
-- [Start here](docs/01-start-here.md): how to use this repository safely
+### Parent routes
+
+- [Start here](docs/01-start-here.md): immediate orientation and appointment preparation
+- [Red flags and urgent help](docs/safety/red-flags-and-urgent-help.md)
+- [Who can help](docs/04-who-can-help.md): professionals, roles, and provider-fit questions
+- [Prepare for care](docs/05-prepare-for-care.md): observation log and appointment checklist
+- [School and daily life](docs/06-school-and-daily-life.md)
+- [Choosing a resource or provider](resources/resource-selection-guide.md)
+
+### Topic background and strategies
+
 - [ADHD overview](docs/adhd/overview.md)
 - [ARFID overview](docs/arfid/overview.md)
 - [Helping a child explore new foods](docs/arfid/trying-new-foods.md)
