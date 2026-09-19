@@ -34,8 +34,14 @@ const pages = [
     </main>
     <footer class="site-footer">
       <div class="shell footer-inner">
-        <p>General educational information—not diagnosis or individualized medical advice.</p>
-        <a href="/safety/red-flags-and-urgent-help/">Safety and urgent help</a>
+        <div>
+          <p>General educational information—not diagnosis or individualized medical advice.</p>
+          <p class="copyright">© {new Date().getFullYear()} ADHD + ARFID Child Support</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="/safety/red-flags-and-urgent-help/">Safety and urgent help</a>
+          <a href="/contact/">Contact</a>
+        </nav>
       </div>
     </footer>
   </body>
@@ -59,5 +65,8 @@ const pages = [
   main { min-height: calc(100vh - 150px); padding: 3rem 0 5rem; }
   .site-footer { border-top: 1px solid #dfe1e5; background: #fff; color: #5f6368; }
   .footer-inner { display: flex; justify-content: space-between; gap: 1rem; padding: 1.25rem 0; font-size: .9rem; }
+  .footer-inner p { margin: .15rem 0; }
+  .copyright { color: #80868b; font-size: .85rem; }
+  .footer-nav { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
   @media (max-width: 760px) { .header-inner, .footer-inner { align-items: flex-start; flex-direction: column; } nav { justify-content: flex-start; } main { padding-top: 2rem; } }
 </style>

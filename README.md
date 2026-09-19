@@ -24,6 +24,8 @@ This project began as a personal need: finding clearer, calmer, and more trustwo
 - [ADHD and ARFID together](docs/cross-cutting/adhd-arfid.md)
 - [Official resources for families](resources/index.md)
 - [Caregiver resources](resources/us.md)
+- [Contact](docs/contact.md)
+- [Cloudflare Pages deployment](docs/deployment/cloudflare-pages.md)
 - [What the research says](docs/research/what-the-research-says.md)
 - [Research-note template](templates/research-note.md)
 - [Contribution and source standards](CONTRIBUTING.md)
