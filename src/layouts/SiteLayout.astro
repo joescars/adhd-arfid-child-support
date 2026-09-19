@@ -1,0 +1,61 @@
+---
+const { title = 'ADHD + ARFID Child Support', description = 'Evidence-aware resources for parents and caregivers.' } = Astro.props;
+const pages = [
+  { href: '/start-here/', label: 'Start here' },
+  { href: '/safety/red-flags-and-urgent-help/', label: 'Urgent help' },
+  { href: '/04-who-can-help/', label: 'Who can help' },
+  { href: '/05-prepare-for-care/', label: 'Prepare for care' },
+  { href: '/06-school-and-daily-life/', label: 'School and daily life' },
+  { href: '/arfid/trying-new-foods/', label: 'Try new foods' },
+];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <title>{title} | ADHD + ARFID Child Support</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="/">ADHD + ARFID<br /><span>Child Support</span></a>
+        <nav aria-label="Primary navigation">
+          {pages.map((page) => <a href={page.href}>{page.label}</a>)}
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="shell">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <p>General educational information—not diagnosis or individualized medical advice.</p>
+        <a href="/safety/red-flags-and-urgent-help/">Safety and urgent help</a>
+      </div>
+    </footer>
+  </body>
+</html>
+<style is:global>
+  :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #202124; background: #f8f9fa; line-height: 1.65; }
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  a { color: #0b57d0; }
+  a:hover { color: #0842a0; }
+  .shell { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; }
+  .skip-link { position: absolute; left: -9999px; padding: .75rem 1rem; background: white; }
+  .skip-link:focus { left: 1rem; top: 1rem; z-index: 10; }
+  .site-header { background: #fff; border-bottom: 1px solid #dfe1e5; }
+  .header-inner { display: flex; gap: 2rem; align-items: center; justify-content: space-between; padding: 1rem 0; }
+  .brand { color: #174ea6; font-weight: 800; line-height: 1.1; text-decoration: none; letter-spacing: -.02em; }
+  .brand span { color: #5f6368; font-size: .85rem; font-weight: 600; }
+  nav { display: flex; flex-wrap: wrap; gap: .45rem; justify-content: flex-end; }
+  nav a { border-radius: 999px; padding: .45rem .8rem; text-decoration: none; font-size: .9rem; }
+  nav a:hover { background: #e8f0fe; }
+  main { min-height: calc(100vh - 150px); padding: 3rem 0 5rem; }
+  .site-footer { border-top: 1px solid #dfe1e5; background: #fff; color: #5f6368; }
+  .footer-inner { display: flex; justify-content: space-between; gap: 1rem; padding: 1.25rem 0; font-size: .9rem; }
+  @media (max-width: 760px) { .header-inner, .footer-inner { align-items: flex-start; flex-direction: column; } nav { justify-content: flex-start; } main { padding-top: 2rem; } }
+</style>

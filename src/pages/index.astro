@@ -1,0 +1,46 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { allPages } from '../lib/content';
+import '../styles/content.css';
+const pages = allPages();
+const featured = pages.filter((page) => ['Start here', 'Red flags and urgent help', 'Who can help', 'Prepare for care'].includes(page.title));
+---
+<SiteLayout title="Parent-first resources" description="Evidence-aware ADHD and ARFID resources for parents and caregivers.">
+  <section class="hero">
+    <p class="eyebrow">A parent-first resource library</p>
+    <h1>Clearer next steps when you feel stuck.</h1>
+    <p class="lede">Evidence-aware information about ADHD, ARFID, feeding concerns, and practical support for children—organized around what parents need to decide next.</p>
+    <div class="hero-actions">
+      <a class="button primary" href="/start-here/">Start here</a>
+      <a class="button" href="/safety/red-flags-and-urgent-help/">Check urgent signs</a>
+    </div>
+  </section>
+  <section aria-labelledby="featured-heading">
+    <h2 id="featured-heading">Parent routes</h2>
+    <div class="card-grid">
+      {featured.map((page) => <a class="card" href={`/${page.slug}/`}><span class="card-label">{page.section}</span><h3>{page.title}</h3><span>Read guide →</span></a>)}
+    </div>
+  </section>
+  <section class="notice" aria-labelledby="notice-heading">
+    <h2 id="notice-heading">Use this site safely</h2>
+    <p>This project provides general education and questions to take to a child's care team. It does not diagnose or replace individualized medical, nutrition, mental-health, feeding, or swallowing care.</p>
+    <a href="/safety/red-flags-and-urgent-help/">Read safety guidance</a>
+  </section>
+</SiteLayout>
+<style>
+  .hero { background: linear-gradient(135deg, #e8f0fe, #fff); border-radius: 1.5rem; padding: clamp(2rem, 6vw, 5rem); margin-bottom: 3rem; }
+  h1 { color: #174ea6; font-size: clamp(2.5rem, 7vw, 5rem); line-height: 1.03; letter-spacing: -.06em; margin: .5rem 0 1.25rem; max-width: 760px; }
+  .lede { font-size: 1.2rem; max-width: 680px; color: #3c4043; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
+  .button { border: 1px solid #0b57d0; border-radius: 999px; padding: .75rem 1.15rem; color: #0b57d0; text-decoration: none; font-weight: 700; }
+  .button.primary { background: #0b57d0; color: white; }
+  .card-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .card { background: #fff; border: 1px solid #dfe1e5; border-radius: 1rem; padding: 1.25rem; text-decoration: none; transition: box-shadow .15s, transform .15s; }
+  .card:hover { box-shadow: 0 8px 24px #20212418; transform: translateY(-2px); }
+  .card h3 { color: #202124; margin: .35rem 0 1rem; line-height: 1.25; }
+  .card-label { color: #5f6368; font-size: .75rem; font-weight: 700; text-transform: uppercase; }
+  .notice { background: #fff; border-left: 5px solid #0b57d0; margin-top: 3rem; padding: 1.25rem 1.5rem; }
+  .notice h2 { margin-top: 0; }
+  @media (max-width: 900px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .card-grid { grid-template-columns: 1fr; } }
+</style>

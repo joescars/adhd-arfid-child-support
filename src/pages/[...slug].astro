@@ -1,0 +1,17 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { allPages } from '../lib/content';
+import '../styles/content.css';
+
+export function getStaticPaths() {
+  return allPages().map((page) => ({ params: { slug: page.slug }, props: { page } }));
+}
+
+const { page } = Astro.props;
+---
+<SiteLayout title={page.title}>
+  <article class="content-page">
+    <p class="eyebrow">{page.section}</p>
+    <div set:html={page.html} />
+  </article>
+</SiteLayout>

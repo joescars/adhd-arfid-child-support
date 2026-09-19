@@ -14,6 +14,11 @@ __pycache__/
 .pytest_cache/
 .venv/
 
+# Node/Astro dependencies and build output
+node_modules/
+dist/
+.astro/
+
 # Secrets and personal data
 .env
 .env.*

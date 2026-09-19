@@ -1,0 +1,12 @@
+.content-page { max-width: 820px; }
+.eyebrow { color: #5f6368; font-size: .85rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.content-page h1 { color: #174ea6; font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.12; letter-spacing: -.04em; margin: .35rem 0 1.5rem; }
+.content-page h2 { color: #202124; border-top: 1px solid #e0e3e7; margin-top: 2.5rem; padding-top: 1.25rem; }
+.content-page h3 { color: #3c4043; margin-top: 1.75rem; }
+.content-page blockquote { border-left: 4px solid #a8c7fa; margin-left: 0; padding: .25rem 1rem; color: #5f6368; }
+.content-page li { margin: .35rem 0; }
+.content-page table { border-collapse: collapse; display: block; max-width: 100%; overflow-x: auto; }
+.content-page th, .content-page td { border: 1px solid #dfe1e5; padding: .65rem .8rem; text-align: left; vertical-align: top; }
+.content-page th { background: #e8f0fe; }
+.content-page code { background: #eef0f1; border-radius: .25rem; padding: .1rem .3rem; }
+.content-page hr { border: 0; border-top: 1px solid #dfe1e5; margin: 2rem 0; }
