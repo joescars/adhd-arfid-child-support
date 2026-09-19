@@ -12,10 +12,13 @@ Create a Cloudflare Pages project connected to the GitHub repository and use:
 | Framework preset | Astro |
 | Build command | `npm run build` |
 | Build output directory | `dist` |
+| Deploy command | **Leave blank** — Cloudflare Pages deploys the `dist` output automatically |
 | Root directory | `/` |
 | Node.js version | Use the repository’s supported Node version; pin it in Cloudflare project settings when choosing a version |
 
 The repository’s `package-lock.json` should be used for reproducible dependency installation. No environment variables are currently required for the static build.
+
+Do not set a deploy command such as `npx wrangler deploy`. That is a separate Workers deployment workflow and causes Wrangler to reconfigure this static Astro project as a Worker. Cloudflare Pages handles the upload of the `dist` directory after the build completes.
 
 ## Custom domain
 
