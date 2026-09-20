@@ -12,7 +12,17 @@ const pageImage = page.slug === 'arfid/trying-new-foods'
   ? { src: '/images/new-foods-still-life.webp', alt: 'Small bowls and plates arranged in a gentle progression of familiar and new foods' }
   : page.slug === '04-who-can-help'
     ? { src: '/images/care-pathway.webp', alt: 'A compass, calendar, notebook, and connected cards representing a care pathway' }
-    : undefined;
+    : page.slug === 'safety/red-flags-and-urgent-help'
+      ? { src: '/images/care-pathway-safety.webp', alt: 'A calm tabletop arrangement with a compass, clock, note card, and colored stepping stones suggesting a clear care pathway' }
+      : page.slug === 'adhd/sleep-and-feeding'
+        ? { src: '/images/sleep-routines.webp', alt: 'A softly lit room with a crescent moon ornament, quiet clock, lamp, and simple routine cards' }
+        : page.slug === 'nutrition/nutrition-hydration-growth'
+          ? { src: '/images/nutrition-growth.webp', alt: 'A sunlit still life with a glass, ceramic bowl, leafy plant, and abstract growth sculpture' }
+          : page.slug === 'caregivers/stress-and-burnout'
+            ? { src: '/images/caregiver-rest.webp', alt: 'A quiet still life with warm mugs, a folded cloth, a notebook, a plant, and a softly glowing lamp' }
+            : page.slug === 'research/clinical-trials' || page.slug === 'tools/printable-parent-worksheets'
+              ? { src: '/images/research-worksheets.webp', alt: 'Blank worksheets, a pencil, colored cards, and a magnifying glass arranged on a softly lit desk' }
+              : undefined;
 ---
 <SiteLayout title={page.title}>
   <article class:list={["content-page", { "resources-page": page.slug === "resources" }] }>
