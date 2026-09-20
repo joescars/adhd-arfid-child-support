@@ -25,7 +25,7 @@ const pageImage = page.slug === 'arfid/trying-new-foods'
               : undefined;
 ---
 <SiteLayout title={page.title}>
-  <article class:list={["content-page", { "resources-page": page.slug === "resources" }] }>
+  <article class:list={["content-page", { "resources-page": page.slug === "resources" || page.slug.startsWith("resources/") }] }>
     {pageImage && <img class="page-image" src={pageImage.src} alt={pageImage.alt} width="1536" height="1024" />}
     <p class="eyebrow">{page.section}</p>
     <div set:html={page.html} />
