@@ -22,6 +22,18 @@
 .content-page h2:last-of-type { color: #5f6368; font-size: 1.35rem; }
 .content-page h2:last-of-type + p,
 .content-page h2:last-of-type ~ p:has(a[href^='http']) { font-size: .92rem; }
+
+/* Inline citations and source cards */
+.citation { align-items: center; background: #e8f0fe; border-radius: 999px; color: #174ea6; display: inline-flex; font-size: .78em; font-weight: 800; line-height: 1; margin: 0 .08em; padding: .28em .42em; text-decoration: none; vertical-align: .16em; }
+.citation:hover, .citation:focus-visible { background: #0b57d0; color: #fff; text-decoration: none; }
+.citation:focus-visible, .source-item:target { outline: 3px solid #a8c7fa; outline-offset: 3px; }
+.content-page h2:has(+ .sources-list) { margin-bottom: 1rem; }
+.sources-list { counter-reset: source; display: grid; gap: .8rem; list-style: none; margin: 0; padding: 0; }
+.source-item { align-items: flex-start; background: linear-gradient(135deg, #fff, #f8fafd); border: 1px solid #dfe1e5; border-radius: .9rem; box-shadow: 0 2px 8px #2021240a; display: grid; gap: .8rem; grid-template-columns: 2rem minmax(0, 1fr); padding: .9rem 1rem; scroll-margin-top: 1rem; }
+.source-item:hover { border-color: #a8c7fa; box-shadow: 0 5px 16px #20212412; }
+.source-number { align-items: center; background: #174ea6; border-radius: 50%; color: #fff; display: inline-flex; font-size: .78rem; font-weight: 800; height: 1.8rem; justify-content: center; width: 1.8rem; }
+.source-item a { font-weight: 700; text-underline-offset: .15em; }
+.source-item a[href^='http']::after { content: ' ↗'; font-size: .9em; text-decoration: none; }
 @media (max-width: 700px) {
   .content-page > div > p:first-of-type { font-size: 1rem; }
   .content-page h2 { margin-top: 2.25rem; }
