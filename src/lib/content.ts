@@ -59,6 +59,23 @@ function rewriteInternalLinks(markdown: string, sourcePath: string): string {
   });
 }
 
+function enhanceCitations(html: string): string {
+  const sourceHeading = '<h2>Sources</h2>';
+  const [content, sourceSection] = html.split(sourceHeading, 2);
+  if (!sourceSection) return html;
+
+  const linkedContent = content.replace(/\[(\d+)\]/g, (_match, id: string) =>
+    `<a class="citation" href="#source-${id}" aria-label="Jump to source ${id}">[${id}]</a>`,
+  );
+  const sourceItems: string[] = [];
+  const remaining = sourceSection.replace(/<p>\[(\d+)\]\s+([\s\S]*?)<\/p>/g, (_match, id: string, source: string) => {
+    sourceItems.push(`<li id="source-${id}" class="source-item"><span class="source-number">${id}</span><div>${source}</div></li>`);
+    return '';
+  });
+  if (!sourceItems.length) return `${linkedContent}${sourceHeading}${sourceSection}`;
+  return `${linkedContent}${sourceHeading}<ol class="sources-list">${sourceItems.join('')}</ol>${remaining}`;
+}
+
 export function allPages(): ContentPage[] {
   return contentFiles()
     .map((sourcePath) => {
@@ -67,7 +84,8 @@ export function allPages(): ContentPage[] {
       const slug = slugForSource(sourcePath);
       const title = titleFromMarkdown(markdown, slug.split('/').at(-1) || slug);
       const section = relativePath.startsWith('resources/') ? 'Resources' : relativePath === 'DISCLAIMER.md' ? 'Safety' : 'Guides';
-      return { slug, title, section, sourcePath, html: marked.parse(markdown) as string };
+      const html = enhanceCitations(marked.parse(markdown) as string);
+      return { slug, title, section, sourcePath, html };
     })
     .sort((a, b) => a.title.localeCompare(b.title));
 }
