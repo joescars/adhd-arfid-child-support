@@ -38,7 +38,24 @@ Use unique citation identifiers within each document, check that each identifier
 
 ## Privacy
 
-Do not include identifiable child details, exact appointment histories, school records, photographs, or private logs in examples. Use fictionalized, non-identifying examples. The repository is public by default even while its GitHub visibility is private.
+Do not include identifiable child details, exact appointment histories, school records, photographs, or private logs in examples. Use fictionalized, non-identifying examples. The repository is public and the live site is deployed at `https://adhdandarfid.com`.
+
+## Website and deployment
+
+- Keep Markdown in `docs/` and `resources/` as the content source of truth; do not duplicate parent-facing content into a second content tree without a documented reason.
+- This is a static Astro site deployed through Cloudflare Pages Git integration. Use `npm run build` with `dist` as the output directory and leave the Cloudflare Pages deploy command blank.
+- Do not run `npx wrangler deploy` for the Pages deployment. That is a separate Workers workflow and can switch the build into server mode, breaking the repository-file Markdown loader.
+- Preserve `https://adhdandarfid.com` as the canonical site URL unless the user explicitly changes the domain.
+- When changing routing, assets, or layout, verify the homepage, contact page, safety route, resources route, printable route, favicon, direct assets, HTTP-to-HTTPS behavior, and representative mobile rendering.
+- Do not add contact forms, analytics, authentication, or other data collection that could receive child health information without a separate privacy and security review.
+
+## Editorial imagery
+
+- Use abstract still lifes and general objects only; never generate or add children, people, faces, hands, body parts, medical procedures, identifying details, logos, or readable text in decorative imagery.
+- Preserve existing local imagery under `public/images/`; add new optimized WebP assets rather than replacing prior images unless the user explicitly requests replacement.
+- Match the established visual language: soft natural light, warm ivory interiors, pale matte surfaces, muted blue-gray, sage, cream, dusty peach, terracotta, and ochre accents, rounded forms, gentle shadows, and generous negative space.
+- Give every content image meaningful alt text that describes the scene and purpose without making medical or diagnostic claims. Verify the asset exists in `dist/` and renders in a browser.
+- Keep image generation and image review separate from source claims: imagery is decorative and must not imply treatment effectiveness, diagnosis, or clinical endorsement.
 
 ## Before committing documentation changes
 
