@@ -2,14 +2,12 @@
 const { title = 'ADHD + ARFID Child Support', description = 'Evidence-aware resources for parents and caregivers.', noindex = false } = Astro.props;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://adhdandarfid.com');
 const pages = [
-  { href: '/next-step/', label: 'Find your next step' },
-  { href: '/start-here/', label: 'Start here' },
-  { href: '/safety/red-flags-and-urgent-help/', label: 'Urgent help' },
+  { href: '/next-step/', label: 'Next step' },
   { href: '/04-who-can-help/', label: 'Who can help' },
-  { href: '/05-prepare-for-care/', label: 'Prepare for care' },
   { href: '/resources/', label: 'Resources' },
-  { href: '/tools/printable-parent-worksheets/', label: 'Printables' }
+  { href: '/safety/red-flags-and-urgent-help/', label: 'Urgent help', urgent: true },
 ];
+import '../styles/site.css';
 ---
 <!doctype html>
 <html lang="en">
@@ -25,9 +23,14 @@ const pages = [
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <div class="shell header-inner">
-        <a class="brand" href="/">ADHD + ARFID<br /><span>Child Support</span></a>
-        <nav aria-label="Primary navigation">
-          {pages.map((page) => <a href={page.href}>{page.label}</a>)}
+        <a class="brand" href="/" aria-label="ADHD and ARFID Child Support home">
+          <span class="brand-name">ADHD <span aria-hidden="true">+</span> ARFID</span>
+          <span class="brand-subtitle">Child Support</span>
+        </a>
+        <nav class="primary-nav" aria-label="Primary navigation">
+          {pages.map((page) => (
+            <a href={page.href} class:list={[{ 'nav-urgent': page.urgent }]} aria-current={Astro.url.pathname === page.href ? 'page' : undefined}>{page.label}</a>
+          ))}
         </nav>
       </div>
     </header>
@@ -36,39 +39,16 @@ const pages = [
     </main>
     <footer class="site-footer">
       <div class="shell footer-inner">
-        <div>
-          <p>General educational information—not diagnosis or individualized medical advice.</p>
+        <div class="footer-copy">
+          <p>General education—not diagnosis or individualized medical advice.</p>
           <p class="copyright">© {new Date().getFullYear()} ADHD + ARFID Child Support</p>
         </div>
         <nav class="footer-nav" aria-label="Footer navigation">
           <a href="/safety/red-flags-and-urgent-help/">Safety and urgent help</a>
           <a href="/contact/">Contact</a>
+          <a href="/disclaimer/">Disclaimer</a>
         </nav>
       </div>
     </footer>
   </body>
 </html>
-<style is:global>
-  :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #202124; background: #f8f9fa; line-height: 1.65; }
-  * { box-sizing: border-box; }
-  body { margin: 0; }
-  a { color: #0b57d0; }
-  a:hover { color: #0842a0; }
-  .shell { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; }
-  .skip-link { position: absolute; left: -9999px; padding: .75rem 1rem; background: white; }
-  .skip-link:focus { left: 1rem; top: 1rem; z-index: 10; }
-  .site-header { background: #fff; border-bottom: 1px solid #dfe1e5; }
-  .header-inner { display: flex; gap: 2rem; align-items: center; justify-content: space-between; padding: 1rem 0; }
-  .brand { color: #174ea6; font-weight: 800; line-height: 1.1; text-decoration: none; letter-spacing: -.02em; }
-  .brand span { color: #5f6368; font-size: .85rem; font-weight: 600; }
-  nav { display: flex; flex-wrap: wrap; gap: .45rem; justify-content: flex-end; }
-  nav a { border-radius: 999px; padding: .45rem .8rem; text-decoration: none; font-size: .9rem; }
-  nav a:hover { background: #e8f0fe; }
-  main { min-height: calc(100vh - 150px); padding: 3rem 0 5rem; }
-  .site-footer { border-top: 1px solid #dfe1e5; background: #fff; color: #5f6368; }
-  .footer-inner { display: flex; justify-content: space-between; gap: 1rem; padding: 1.25rem 0; font-size: .9rem; }
-  .footer-inner p { margin: .15rem 0; }
-  .copyright { color: #80868b; font-size: .85rem; }
-  .footer-nav { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
-  @media (max-width: 760px) { .header-inner, .footer-inner { align-items: flex-start; flex-direction: column; } nav { justify-content: flex-start; } main { padding-top: 2rem; } }
-</style>
