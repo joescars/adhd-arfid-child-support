@@ -1,5 +1,7 @@
 # Food allergy, allergy anxiety, and fear-based restriction
 
+For urgent eating, swallowing, hydration, growth, or acute-distress concerns, see [red flags and urgent help](../safety/red-flags-and-urgent-help.md).
+
 Food allergy can require strict medical avoidance. It can also make a child fearful of eating or lead to a diet that becomes narrower than medically necessary. Allergy precautions and ARFID-related fear are different questions and may require coordinated care.[1][2]
 
 ## What to notice

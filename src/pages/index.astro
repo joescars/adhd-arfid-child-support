@@ -3,7 +3,7 @@ import SiteLayout from '../layouts/SiteLayout.astro';
 import { allPages } from '../lib/content';
 import '../styles/content.css';
 const pages = allPages();
-const featured = pages.filter((page) => ['Start here', 'Red flags and urgent help', 'Who can help', 'Prepare for care'].includes(page.title));
+const featured = pages.filter((page) => ['Find your next step', 'Red flags and urgent help', 'Who can help', 'Prepare for care'].includes(page.title));
 ---
 <SiteLayout title="Parent-first resources" description="Evidence-aware ADHD and ARFID resources for parents and caregivers.">
   <section class="hero">
@@ -12,7 +12,7 @@ const featured = pages.filter((page) => ['Start here', 'Red flags and urgent hel
       <h1>Clearer next steps when you feel stuck.</h1>
       <p class="lede">Evidence-aware information about ADHD, ARFID, feeding concerns, and practical support for children—organized around what parents need to decide next.</p>
       <div class="hero-actions">
-        <a class="button primary" href="/start-here/">Start here</a>
+        <a class="button primary" href="/next-step/">Find your next step</a>
         <a class="button" href="/safety/red-flags-and-urgent-help/">Check urgent signs</a>
       </div>
     </div>

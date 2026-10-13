@@ -1,5 +1,6 @@
 ---
-const { title = 'ADHD + ARFID Child Support', description = 'Evidence-aware resources for parents and caregivers.' } = Astro.props;
+const { title = 'ADHD + ARFID Child Support', description = 'Evidence-aware resources for parents and caregivers.', noindex = false } = Astro.props;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://adhdandarfid.com');
 const pages = [
   { href: '/next-step/', label: 'Find your next step' },
   { href: '/start-here/', label: 'Start here' },
@@ -17,6 +18,7 @@ const pages = [
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta name="description" content={description} />
+    {noindex ? <meta name="robots" content="noindex, follow" /> : <link rel="canonical" href={canonicalUrl.href} />}
     <title>{title} | ADHD + ARFID Child Support</title>
   </head>
   <body>

@@ -12,6 +12,7 @@ These additions complement the main [official resources directory](index.md). In
 
 ## Access, insurance, and school navigation
 
+- [Family Voices: Find help in your community / Family-to-Family Health Information Centers](https://familyvoices.org/affiliates/) — a U.S. directory to locate family-led Family-to-Family Health Information Centers (F2Fs) by state or territory, including listed tribal-serving centers. HRSA's MCHB funds the F2F program; participating centers provide family-to-family navigation and support. A navigator is not a clinician and cannot guarantee a specialist opening, coverage, eligibility, referral, or outcome. Confirm current local services directly. (U.S.; directory page checked October 13, 2026.)
 - [HRSA Find a Health Center](https://findahealthcenter.hrsa.gov/) — U.S. community health centers and lower-cost primary-care access.
 - [Medicaid and CHIP state contacts](https://www.medicaid.gov/about-us/where-can-people-get-help-medicaid-chip) — U.S. state contacts for eligibility, renewals, claims, and provider questions.
 - [InsureKidsNow Dentist Locator](https://www.insurekidsnow.gov/find-a-dentist) — U.S. dentist search for children with Medicaid or CHIP.
@@ -32,4 +33,4 @@ These additions complement the main [official resources directory](index.md). In
 - [NHS ARFID information](https://www.nhs.uk/mental-health/conditions/arfid/) — United Kingdom information and local-route context.
 - [ARFID Awareness UK service locator](https://www.arfidawarenessuk.org/service-locator) — UK-oriented directory; verify provider fit directly.
 
-**Reviewed:** September 19, 2026. Dynamic links and directories should be rechecked regularly.
+**Reviewed:** October 13, 2026. This is a resource link check, not a clinical review or endorsement. Dynamic links and directories should be rechecked regularly.

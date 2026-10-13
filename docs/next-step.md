@@ -36,4 +36,6 @@ Use [who can help](04-who-can-help.md), [official resources](../resources/index.
 
 ## I am waiting for care
 
-Protect safe foods and usual fluids, avoid coercion and unprescribed changes, keep a short factual log, and review [red flags](safety/red-flags-and-urgent-help.md) if the situation changes.
+If it is manageable, a caregiver can keep the existing care plan, accepted foods, and usual fluids in place; do not introduce treatment changes from a webpage. Write down only what changed, the first person to contact, questions to ask, who will follow up, and when. A child or young person may choose to add: “What would you like the care team to understand?” The purpose is to organize a future conversation—not monitor or score the child. This optional, low-burden checklist is for caregivers waiting for a pediatric or school conversation and needs no special preparation. Stop if it increases conflict or distress, becomes burdensome, or delays care. Contact the care team promptly if intake, hydration, growth, swallowing, or distress worsens; use [red flags and urgent help](safety/red-flags-and-urgent-help.md) if the situation may be urgent.
+
+For a printable, see the [care-coordination sheet](tools/printable-parent-worksheets.md#care-coordination-while-waiting).

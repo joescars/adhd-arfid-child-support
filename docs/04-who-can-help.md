@@ -1,5 +1,7 @@
 # Who can help
 
+For urgent eating, swallowing, hydration, growth, medication, or acute-distress concerns, see [red flags and urgent help](safety/red-flags-and-urgent-help.md).
+
 You do not need to identify the correct diagnosis before asking for help. Start with the child's pediatrician or primary care clinician and describe the observable problem: what the child eats and drinks, what has changed, what happens during meals, and how eating affects health and daily life.[1]
 
 ## Start with primary care

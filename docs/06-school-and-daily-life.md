@@ -1,5 +1,7 @@
 # School and daily life
 
+For urgent eating, swallowing, hydration, growth, or acute-distress concerns, see [red flags and urgent help](safety/red-flags-and-urgent-help.md).
+
 Food and attention difficulties often become harder when a child is rushed, distracted, hungry, navigating transitions, or expected to manage unfamiliar routines independently. This page is a planning aid, not a statement that a child qualifies for a particular school service.
 
 ## Start with observations
@@ -20,6 +22,8 @@ Share only the health information needed for the school to support the child, an
 
 The appropriate support depends on the child's needs and local process. Examples to discuss with the school team may include a predictable lunch routine, advance notice of changes, a quieter or less crowded eating location, access to safe foods, additional time where feasible, neutral adult prompts, a plan for hydration, and a clear response if the child becomes ill or distressed. These are possibilities, not a universal plan.
 
+These discussions have different purposes and may involve different people: day-to-day participation supports with the classroom or school team; educational/disability evaluation through the locally responsible education contact; health and emergency coordination through the school nurse or health contact where available; school-meal-program questions with the food-service contact; and any clinician-directed feeding or swallowing procedures with the child's care team and school staff who are qualified and authorized to carry them out. One process does not guarantee eligibility, an accommodation, or a particular service under another.
+
 Do not ask school staff to force tasting, remove all safe foods, or change medication. Medication decisions belong to the prescribing and caregiving team under applicable rules.
 
 ## Requesting an evaluation in the United States
@@ -27,6 +31,8 @@ Do not ask school staff to force tasting, remove all safe foods, or change medic
 Parents can contact the teacher, principal, counselor, or local special-education office to ask about an evaluation. Under IDEA, evaluations use multiple sources and tools and assess all areas related to suspected educational need rather than relying on a single test.[1] Section 504 protections and evaluation procedures can also apply, and a medical diagnosis is not necessarily a precondition for a school evaluation; eligibility and services are determined case by case under the applicable law and local process.[2]
 
 This is United States-specific information. Families elsewhere should consult their local education authority or disability-support service. ADHD clinical care also benefits from information gathered across home, school, and other settings.[3]
+
+For U.S. school-meal-program questions, ask the district's food-service or meal-program contact what current documentation and process apply. USDA's February 2026 page addresses medical statements from registered dietitians; requirements vary by program and request, and the page does not determine an individual child's eligibility. Confirm current requirements with the school and state agency.[4][5]
 
 ## A short school communication checklist
 
@@ -38,11 +44,16 @@ This is United States-specific information. Families elsewhere should consult th
 - Which clinician recommendations are relevant and current
 - Who will communicate changes to the family and care team
 - When the plan will be reviewed
+- What documentation is needed for each separate school process, and who coordinates it?
+- How will established accepted foods, hydration, allergy precautions, and clinician-directed swallowing precautions be communicated?
+- What should the family do if a proposed support is unavailable or does not work?
 
 ## Sources
 
-[1] [U.S. Department of Education: IDEA §300.304—Evaluation procedures](https://sites.ed.gov/idea/regs/b/d/300.304) — United States regulation on varied evaluation tools and assessing all areas related to suspected disability.
+[1] https://sites.ed.gov/idea/regs/b/d/300.304
+[2] https://www.ed.gov/laws-and-policy/civil-rights-laws/disability-discrimination/frequently-asked-questions-disability-discrimination
+[3] https://www.cdc.gov/adhd/hcp/clinical-care/index.html
+[4] https://www.fns.usda.gov/cn/requirement-accept-medical-statements-registered-dietitians
+[5] https://www.fns.usda.gov/cn/2016-modification-to-accomodate-disabilities-in-school-meals
 
-[2] [U.S. Department of Education: Frequently Asked Questions—Disability Discrimination](https://www.ed.gov/laws-and-policy/civil-rights-laws/disability-discrimination/frequently-asked-questions-disability-discrimination) — United States guidance on Section 504 evaluation and support obligations; legal questions may require local advocacy or legal assistance.
-
-[3] [CDC: Clinical Care of ADHD in Children](https://www.cdc.gov/adhd/hcp/clinical-care/index.html) — United States clinical-care resource emphasizing information from home, school, and other settings.
+**Page reviewed:** October 13, 2026. U.S. education and meal-program information only; local procedures and facts vary. USDA SP 59-2016 is a dated memo and should be read with later guidance and current regulations; this page is not legal advice or an individual eligibility decision.

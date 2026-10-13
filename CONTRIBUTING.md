@@ -48,6 +48,7 @@ Before committing a substantive page update:
 - distinguish research evidence, clinical guidance, government information, professional opinion, practical strategy, and lived experience;
 - use unique citation identifiers within each document and remove duplicate or stale entries;
 - state source limitations and review dates;
+- for externally maintained resource directories and program links, distinguish the last link-check date from clinical review or endorsement, and verify the source owner directly before describing information as current;
 - check links and citation sections;
 - run the citation ledger verification for new or materially changed sourced documents;
 - run `git diff --check` and review the complete staged file list;

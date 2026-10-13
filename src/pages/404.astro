@@ -1,0 +1,17 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import '../styles/content.css';
+---
+<SiteLayout title="Page not found" description="This page could not be found. Choose a parent support route or return to the homepage." noindex={true}>
+  <article class="content-page">
+    <p class="eyebrow">404 · Not found</p>
+    <h1>We couldn’t find that page.</h1>
+    <p>The address may be out of date or mistyped. Choose a next step or return to the homepage.</p>
+    <ul>
+      <li><a href="/next-step/">Find your next step</a></li>
+      <li><a href="/safety/red-flags-and-urgent-help/">Red flags and urgent help</a></li>
+      <li><a href="/resources/">Browse resources</a></li>
+      <li><a href="/">Return to the homepage</a></li>
+    </ul>
+  </article>
+</SiteLayout>

@@ -1,6 +1,8 @@
 # When ADHD and ARFID concerns overlap
 
-ADHD and ARFID are separate concepts, but a child can experience both. A shared observation—such as skipping meals—can have different contributors: reduced appetite, distraction, difficulty with transitions, sensory sensitivity, anxiety, fear of aversive consequences, pain, or limited access to acceptable foods. The observation should be investigated rather than assigned a single cause.
+For urgent eating, swallowing, hydration, growth, medication, or acute-distress concerns, see [red flags and urgent help](../safety/red-flags-and-urgent-help.md).
+
+ADHD and ARFID are separate concepts, but a child can experience both. A shared observation—such as skipping meals—can have different contributors: reduced appetite, distraction, difficulty with transitions, sensory sensitivity, anxiety, fear of aversive consequences, pain, or limited access to acceptable foods. The observation should be investigated rather than assigned a single cause. This page does not diagnose either condition.[1][2]
 
 ## Questions for a coordinated assessment
 
@@ -14,14 +16,15 @@ ADHD and ARFID are separate concepts, but a child can experience both. A shared 
 
 ## A useful coordination principle
 
-Ask clinicians to make one integrated plan rather than treating attention, appetite, nutrition, anxiety, and feeding in isolated silos. CDC guidance notes that ADHD care can include medication, behavior therapy, school supports, and monitoring for side effects such as appetite or sleep changes.[1] ARFID resources emphasize that restrictive intake can have health and social effects requiring professional assessment.[2][3]
+Ask clinicians to make one integrated plan rather than treating attention, appetite, nutrition, anxiety, and feeding in isolated silos. U.S. CDC clinical-care information for children and adolescents with ADHD discusses treatment and coordination with families and schools.[1] ASHA professional guidance describes ARFID, pediatric feeding disorder, swallowing concerns, their overlap, and potential impacts; it is not an individualized assessment or treatment trial.[2]
 
 ## Keep the child's dignity central
 
 A child is not refusing food to make life harder. Avoid coercion and moral language about food. Invite the child's perspective, offer predictable choices where clinically appropriate, and use the care team to decide what changes are safe.
 
+For urgent eating, swallowing, hydration, growth, medication, or acute-distress concerns, see [red flags and urgent help](../safety/red-flags-and-urgent-help.md).
+
 ## Sources
 
-[1] https://www.cdc.gov/adhd/diagnosis/index.html
-[2] https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know
-[3] https://www.cdc.gov/adhd/treatment/index.html
+[1] https://www.cdc.gov/adhd/hcp/clinical-care/index.html
+[2] https://www.asha.org/practice-portal/clinical-topics/pediatric-feeding-and-swallowing

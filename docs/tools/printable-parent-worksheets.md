@@ -75,6 +75,34 @@ ______________________________________________________________________________
 
 ☐ protects safe foods, hydration, dignity, and the child’s ability to pause
 
+## Care coordination while waiting
+
+This optional worksheet is an information-organizing aid for caregivers preparing for a care or school conversation. It is not a treatment or monitoring plan. Leave anything blank that is not useful; stop if completing it increases distress or delays care. For worsening symptoms or urgent concerns, contact the care team or use [red flags and urgent help](../safety/red-flags-and-urgent-help.md).
+
+**Main concern / what changed:**
+
+______________________________________________________________________________
+
+**First person or service to contact:**
+
+______________________________________________________________________________
+
+**Questions to ask:**
+
+______________________________________________________________________________
+
+______________________________________________________________________________
+
+**Who will follow up, and when?**
+
+______________________________________________________________________________
+
+**Child or young person's voice (optional): “What would you like the care team to understand?”**
+
+______________________________________________________________________________
+
+Do not delay urgent care to complete this sheet. Keep established safe foods and usual fluids in place and follow the child's existing clinician-directed plan; do not make medication, diet, supplement, or feeding-plan changes based on this worksheet. Keep completed copies private; do not publish records or identifying details.
+
 ## Sources
 
 [1] [ASHA: Pediatric Feeding and Swallowing](https://www.asha.org/practice-portal/clinical-topics/pediatric-feeding-and-swallowing/) — observation, safety, and team-care context.

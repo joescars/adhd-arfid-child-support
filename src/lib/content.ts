@@ -9,7 +9,8 @@ const contentRoots = ['docs', 'resources'];
 
 function contentFiles(): string[] {
   return [
-    ...contentRoots.flatMap((root) => markdownFiles(join(projectRoot, root))),
+    ...contentRoots.flatMap((root) => markdownFiles(join(projectRoot, root)))
+      .filter((path) => path !== join(projectRoot, 'docs/research/website-improvement-plan.md')),
     join(projectRoot, 'DISCLAIMER.md'),
   ];
 }
@@ -17,6 +18,7 @@ function contentFiles(): string[] {
 type ContentPage = {
   slug: string;
   title: string;
+  description: string;
   section: string;
   sourcePath: string;
   html: string;
@@ -83,11 +85,26 @@ export function allPages(): ContentPage[] {
       const relativePath = relative(projectRoot, sourcePath).split(sep).join('/');
       const slug = slugForSource(sourcePath);
       const title = titleFromMarkdown(markdown, slug.split('/').at(-1) || slug);
+      const intro = (marked.parse(markdown) as string).match(/<p>([\s\S]*?)<\/p>/)?.[1] ?? '';
+      const description = intro
+        .replace(/<[^>]*>/g, ' ')
+        .replace(/&amp;/g, '&')
+        .replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'")
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .slice(0, 155);
       const section = relativePath.startsWith('resources/') ? 'Resources' : relativePath === 'DISCLAIMER.md' ? 'Safety' : 'Guides';
       const html = enhanceCitations(marked.parse(markdown) as string);
-      return { slug, title, section, sourcePath, html };
+      return { slug, title, description, section, sourcePath, html };
     })
     .sort((a, b) => a.title.localeCompare(b.title));
+}
+
+export function contentPageCount(): number {
+  return contentFiles().length;
 }
 
 export function pageBySlug(slug: string): ContentPage | undefined {

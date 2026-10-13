@@ -20,6 +20,8 @@ Verify availability, cost, age range, and clinical scope before relying on a ser
 - Ask the school about the appropriate evaluation and accommodation process under local and federal rules. A pediatrician, school psychologist, counselor, or special-education coordinator can explain the path in your district.
 - Ask clinicians to document who monitors growth, nutrition, medication effects, and feeding progress.
 
+For family navigation while looking for services, see [Family Voices and Family-to-Family Health Information Centers](https://familyvoices.org/affiliates/). A family navigator can help with information and service navigation but does not provide clinical assessment or guarantee access. Verify local services directly.
+
 ## Urgent support
 
 - In the United States, call or text **988** for immediate suicide or mental-health crisis support.
@@ -27,4 +29,4 @@ Verify availability, cost, age range, and clinical scope before relying on a ser
 
 ## Source-review note
 
-This directory should be reviewed periodically. Organizations change eligibility, phone numbers, policies, and service availability. Add a review date when entries are updated.
+This directory should be reviewed periodically. Organizations change eligibility, phone numbers, policies, and service availability. A link-check date is not a clinical review or endorsement. **Reviewed:** October 13, 2026.

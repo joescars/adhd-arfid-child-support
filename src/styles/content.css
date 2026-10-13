@@ -32,7 +32,7 @@
 .source-item { align-items: flex-start; background: linear-gradient(135deg, #fff, #f8fafd); border: 1px solid #dfe1e5; border-radius: .9rem; box-shadow: 0 2px 8px #2021240a; display: grid; gap: .8rem; grid-template-columns: 2rem minmax(0, 1fr); padding: .9rem 1rem; scroll-margin-top: 1rem; }
 .source-item:hover { border-color: #a8c7fa; box-shadow: 0 5px 16px #20212412; }
 .source-number { align-items: center; background: #174ea6; border-radius: 50%; color: #fff; display: inline-flex; font-size: .78rem; font-weight: 800; height: 1.8rem; justify-content: center; width: 1.8rem; }
-.source-item a { font-weight: 700; text-underline-offset: .15em; }
+.source-item a { font-weight: 700; overflow-wrap: anywhere; text-underline-offset: .15em; }
 .source-item a[href^='http']::after { content: ' ↗'; font-size: .9em; text-decoration: none; }
 @media (max-width: 700px) {
   .content-page > div > p:first-of-type { font-size: 1rem; }

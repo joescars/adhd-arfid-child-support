@@ -1,5 +1,7 @@
 # Oral health, dental pain, and feeding
 
+For urgent eating, swallowing, hydration, growth, or acute-distress concerns, see [red flags and urgent help](../safety/red-flags-and-urgent-help.md).
+
 Dental pain, cavities, mouth injury, chewing difficulty, and difficult dental visits can change what a child is willing or able to eat. Restricted eating can also make it harder to build a varied oral-health routine. A change in eating should not be assumed to be behavioral before pain and oral health are considered.[1]
 
 ## What to notice

@@ -20,8 +20,12 @@ You do not need to know the diagnosis before asking for help. The right first co
 - What are your insurance, referral, waitlist, language, telehealth, transportation, and geographic limitations?
 - How do you protect safe foods, hydration, growth, dignity, and the child's perspective?
 
+## Access checklist
+
+When looking for a service, you can ask about pediatric age range; experience with ARFID or feeding concerns and swallowing competence where relevant; referral and insurance requirements; in-network coverage, prior authorization, and out-of-network costs; telehealth and language access; transportation; waitlist; and who will coordinate the referral. This is a navigation checklist, not a provider rating or guarantee of access.
+
 ## Limits of directories
 
 A directory listing does not prove credentials, pediatric experience, ARFID or feeding-disorder expertise, swallowing competence, insurance participation, current openings, or treatment quality. Verify details directly and ask what the provider does not assess.
 
-**Reviewed:** September 20, 2026. Provider availability, directories, and referral rules change; confirm current details directly.
+**Reviewed:** October 13, 2026. This is a resource link check, not a clinical review or endorsement. Provider availability, directories, and referral rules change; confirm current details directly.

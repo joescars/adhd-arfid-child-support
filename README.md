@@ -2,7 +2,7 @@
 
 A caregiver-oriented, evidence-aware collection of research, practical questions, and vetted resources for supporting children who may have ADHD, ARFID (avoidant/restrictive food intake disorder), or both.
 
-This project began as a personal need: finding clearer, calmer, and more trustworthy information for a 9-year-old child. It is not a substitute for a pediatrician, registered dietitian, mental-health clinician, or eating-disorder specialist.
+This project is intended to make clearer, calmer, and more trustworthy information easier for caregivers to find. It is not a substitute for a pediatrician, registered dietitian, mental-health clinician, or eating-disorder specialist.
 
 ## What is here
 
@@ -40,4 +40,4 @@ This project began as a personal need: finding clearer, calmer, and more trustwo
 
 ## Status
 
-This is an early, documentation-first scaffold. It will grow through careful source review and caregiver-friendly editing before any future website is considered.
+This is a documentation-first project and public static website. Content grows through careful source review and caregiver-friendly editing.
