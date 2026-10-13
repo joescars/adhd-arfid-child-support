@@ -8,6 +8,7 @@ export function getStaticPaths() {
 }
 
 const { page } = Astro.props;
+const isPrintablePage = page.slug === 'tools/printable-parent-worksheets';
 const pageImage = page.slug === 'arfid/trying-new-foods'
   ? { src: '/images/new-foods-still-life.webp', alt: 'Small bowls and plates arranged in a gentle progression of familiar and new foods' }
   : page.slug === '04-who-can-help'
@@ -27,6 +28,10 @@ const pageImage = page.slug === 'arfid/trying-new-foods'
 <SiteLayout title={page.title} description={page.description}>
   <article class:list={["content-page", { "resources-page": page.slug === "resources" || page.slug.startsWith("resources/") }] }>
     {pageImage && <img class="page-image" src={pageImage.src} alt={pageImage.alt} width="1536" height="1024" />}
+    {isPrintablePage && <div class="download-card">
+      <div><strong>Download printable worksheets</strong><p>Letter-size PDF with print-friendly spacing and page breaks.</p></div>
+      <a class="download-button" href="/downloads/parent-worksheets.pdf" download>Download PDF</a>
+    </div>}
     <p class="eyebrow">{page.section}</p>
     <div set:html={page.html} />
   </article>
