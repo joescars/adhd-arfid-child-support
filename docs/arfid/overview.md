@@ -40,6 +40,7 @@ For emergency signs, prompt clinician contact, and routine follow-up, use the [r
 ## Sources
 
 [1] https://www.nimh.nih.gov/sites/default/files/documents/health/publications/lets-talk-about-eating-disorders/common-types-eating-disorders.pdf
+
 [2] https://www.asha.org/practice-portal/clinical-topics/pediatric-feeding-and-swallowing
 
 **Page reviewed:** October 13, 2026. NIMH is brief U.S. public-health information; ASHA is professional guidance, not an intervention trial. Neither source can determine whether a particular child has ARFID.

@@ -61,6 +61,43 @@ function rewriteInternalLinks(markdown: string, sourcePath: string): string {
   });
 }
 
+function formatSourceLink(source: string): string {
+  const autoLink = source.match(/^<a href="([^"]+)">([^<]+)<\/a>([\s\S]*)$/);
+  let url: string;
+  let suffix: string;
+  if (autoLink) {
+    const href = autoLink[1].replace(/&amp;/g, '&');
+    const label = autoLink[2].replace(/&amp;/g, '&');
+    if (label !== href) return source;
+    url = href;
+    suffix = autoLink[3];
+  } else {
+    const match = source.match(/^(https?:\/\/[^\s<]+)([\s\S]*)$/);
+    if (!match) return source;
+    url = match[1].replace(/&amp;/g, '&');
+    suffix = match[2];
+  }
+
+  const sourceTitle = suffix.match(/^\s+—\s+([\s\S]+?)\s*$/)?.[1];
+  const href = url.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+  if (sourceTitle) return `<a href="${href}">${sourceTitle}</a>`;
+
+  try {
+    const parsedUrl = new URL(url);
+    const host = parsedUrl.hostname.replace(/^www\./, '');
+    const lastPath = parsedUrl.pathname.split('/').filter(Boolean).at(-1)?.replace(/\.[a-z0-9]+$/i, '').replace(/[-_]+/g, ' ');
+    const accessibleLabel = [`Visit source at ${host}`, lastPath].filter(Boolean).join(', ')
+      .replace(/&/g, '&amp;')
+      .replace(/"/g, '&quot;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+    const visibleLabel = host.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    return `<a href="${href}" aria-label="${accessibleLabel}">Visit ${visibleLabel}</a>${suffix}`;
+  } catch {
+    return source;
+  }
+}
+
 function enhanceCitations(html: string): string {
   const sourceHeading = '<h2>Sources</h2>';
   const [content, sourceSection] = html.split(sourceHeading, 2);
@@ -71,7 +108,7 @@ function enhanceCitations(html: string): string {
   );
   const sourceItems: string[] = [];
   const remaining = sourceSection.replace(/<p>\[(\d+)\]\s+([\s\S]*?)<\/p>/g, (_match, id: string, source: string) => {
-    sourceItems.push(`<li id="source-${id}" class="source-item"><span class="source-number">${id}</span><div>${source}</div></li>`);
+    sourceItems.push(`<li id="source-${id}" class="source-item">${formatSourceLink(source)}</li>`);
     return '';
   });
   if (!sourceItems.length) return `${linkedContent}${sourceHeading}${sourceSection}`;

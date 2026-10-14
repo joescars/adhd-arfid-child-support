@@ -30,5 +30,7 @@ These prompts are not diagnostic criteria. They are a way to make a clinician an
 ## Sources
 
 [1] https://www.cdc.gov/adhd/diagnosis/index.html
+
 [2] https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know
+
 [3] https://www.cdc.gov/adhd/treatment/index.html

@@ -51,9 +51,13 @@ For U.S. school-meal-program questions, ask the district's food-service or meal-
 ## Sources
 
 [1] https://sites.ed.gov/idea/regs/b/d/300.304
+
 [2] https://www.ed.gov/laws-and-policy/civil-rights-laws/disability-discrimination/frequently-asked-questions-disability-discrimination
+
 [3] https://www.cdc.gov/adhd/hcp/clinical-care/index.html
+
 [4] https://www.fns.usda.gov/cn/requirement-accept-medical-statements-registered-dietitians
+
 [5] https://www.fns.usda.gov/cn/2016-modification-to-accomodate-disabilities-in-school-meals
 
 **Page reviewed:** October 13, 2026. U.S. education and meal-program information only; local procedures and facts vary. USDA SP 59-2016 is a dated memo and should be read with later guidance and current regulations; this page is not legal advice or an individual eligibility decision.

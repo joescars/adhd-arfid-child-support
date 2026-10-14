@@ -4,11 +4,21 @@ For urgent eating, swallowing, hydration, growth, medication, or acute-distress 
 
 You do not need to identify the correct diagnosis before asking for help. Start with the child's pediatrician or primary care clinician and describe the observable problem: what the child eats and drinks, what has changed, what happens during meals, and how eating affects health and daily life.[1]
 
-## Start with primary care
+<nav class="page-jumps" aria-label="On this page">
+  <strong>On this page</strong>
+  <ul>
+    <li><a href="#start-with-primary-care">Start with primary care</a></li>
+    <li><a href="#possible-care-team">Possible care-team members</a></li>
+    <li><a href="#provider-fit">Questions to check provider fit</a></li>
+    <li><a href="#referral-not-fit">If the first referral is not a fit</a></li>
+  </ul>
+</nav>
+
+<h2 id="start-with-primary-care">Start with primary care</h2>
 
 A pediatrician or primary care clinician can review growth and hydration, medical history, pain, gastrointestinal symptoms, oral health, sleep, medications, and developmental concerns. They can help decide which referrals are appropriate and who will coordinate follow-up. Ask for a plan that addresses both the eating concern and any ADHD, anxiety, sleep, or medication questions rather than assuming one explanation.[1][2]
 
-## Possible members of a care team
+<h2 id="possible-care-team">Possible members of a care team</h2>
 
 Not every child needs every professional. Roles and referral pathways vary by location, insurance, age, and the reason eating is difficult.
 
@@ -24,7 +34,7 @@ Not every child needs every professional. Roles and referral pathways vary by lo
 
 ARFID and pediatric feeding disorder can overlap but are not interchangeable. ASHA notes that ARFID is outside an SLP's diagnostic scope, while an SLP may screen, assess related feeding or swallowing problems, and refer to an ARFID treatment team.[2]
 
-## Questions to check provider fit
+<h2 id="provider-fit">Questions to check provider fit</h2>
 
 - Do you work with children this age who have restricted eating, ARFID, or pediatric feeding disorder?
 - Do you assess the specific concern we see: nutrition, sensory tolerance, chewing, swallowing, fear, pain, anxiety, or school participation?
@@ -36,7 +46,7 @@ ARFID and pediatric feeding disorder can overlap but are not interchangeable. AS
 
 A service that promises a universal cure, demands coercion, dismisses choking or pain, or cannot explain how it will coordinate safety deserves careful scrutiny. Multidisciplinary management is described in pediatric clinical guidance, but the exact team should be based on the child's needs.[4]
 
-## If the first referral is not a fit
+<h2 id="referral-not-fit">If the first referral is not a fit</h2>
 
 Ask the referring clinician for another referral or for the specific service component that is missing. Keep the request concrete: “We need someone who can evaluate chewing and swallowing,” “We need pediatric nutrition assessment,” or “We need a clinician experienced with ARFID-related fear.” A long waitlist or poor fit is an access problem, not evidence that the child's difficulty is not real.
 

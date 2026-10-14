@@ -13,6 +13,8 @@ const pageImage = page.slug === 'arfid/trying-new-foods'
   ? { src: '/images/new-foods-still-life.webp', alt: 'Small bowls and plates arranged in a gentle progression of familiar and new foods' }
   : page.slug === '04-who-can-help'
     ? { src: '/images/care-pathway.webp', alt: 'A compass, calendar, notebook, and connected cards representing a care pathway' }
+    : page.slug === 'research/what-the-research-says'
+      ? { src: '/images/research-worksheets.webp', alt: 'Blank worksheets, a pencil, colored cards, and a magnifying glass arranged on a softly lit desk' }
     : page.slug === 'safety/red-flags-and-urgent-help'
       ? { src: '/images/care-pathway-safety.webp', alt: 'A calm tabletop arrangement with a compass, clock, note card, and colored stepping stones suggesting a clear care pathway' }
       : page.slug === 'adhd/sleep-and-feeding'
@@ -21,21 +23,24 @@ const pageImage = page.slug === 'arfid/trying-new-foods'
           ? { src: '/images/nutrition-growth.webp', alt: 'A sunlit still life with a glass, ceramic bowl, leafy plant, and abstract growth sculpture' }
           : page.slug === 'caregivers/stress-and-burnout'
             ? { src: '/images/caregiver-rest.webp', alt: 'A quiet still life with warm mugs, a folded cloth, a notebook, a plant, and a softly glowing lamp' }
-            : page.slug === 'research/clinical-trials' || page.slug === 'tools/printable-parent-worksheets'
-              ? { src: '/images/research-worksheets.webp', alt: 'Blank worksheets, a pencil, colored cards, and a magnifying glass arranged on a softly lit desk' }
-              : undefined;
+      : page.slug === 'research/clinical-trials' || page.slug === 'tools/printable-parent-worksheets'
+        ? { src: '/images/research-worksheets.webp', alt: 'Blank worksheets, a pencil, colored cards, and a magnifying glass arranged on a softly lit desk' }
+        : undefined;
+const imageMarkup = pageImage
+  ? `<img class="page-image" src="${pageImage.src}" alt="${pageImage.alt}" width="1536" height="1024" loading="lazy" decoding="async">`
+  : '';
+const pageHtml = !pageImage
+  ? page.html
+  : page.html.includes('class="page-jumps"')
+    ? page.html.replace(/<nav class="page-jumps"[\s\S]*?<\/nav>/, (nav) => `${nav}${imageMarkup}`)
+    : page.html.replace(/(<h1\b[\s\S]*?<\/h1>\s*<p\b[\s\S]*?<\/p>)/, (intro) => `${intro}${imageMarkup}`);
 ---
 <SiteLayout title={page.title} description={page.description}>
   <article class:list={["content-page", { "resources-page": page.slug === "resources" || page.slug.startsWith("resources/") }] }>
-    {pageImage && <img class="page-image" src={pageImage.src} alt={pageImage.alt} width="1536" height="1024" />}
     {isPrintablePage && <div class="download-card">
       <div><strong>Download printable worksheets</strong><p>Letter-size PDF with print-friendly spacing and page breaks.</p></div>
       <a class="download-button" href="/downloads/parent-worksheets.pdf" download>Download PDF</a>
     </div>}
-    <p class="eyebrow">{page.section}</p>
-    <div set:html={page.html} />
+    <div set:html={pageHtml} />
   </article>
 </SiteLayout>
-<style>
-  .page-image { border-radius: 1.25rem; display: block; height: 250px; margin-bottom: 2rem; object-fit: cover; width: 100%; }
-</style>
