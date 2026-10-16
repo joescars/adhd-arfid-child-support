@@ -52,6 +52,12 @@ Official registries and participation information. A registry entry is not proof
 
 [Browse research and clinical-trial resources](research.md)
 
+### Additional guides and books
+
+Caregiver education, family support, and optional book recommendations on ADHD, executive skills, and ARFID. These are starting points, not individualized advice or treatment plans.
+
+[Browse additional resources and books](additional-resources.md)
+
 ### Watch educational videos
 
 Embedded videos from CDC, NIMH, Boston Children’s Hospital, and Feeding Matters. Videos are educational starting points—not diagnoses or treatment instructions.
